@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSS3 Transitions & Animations + JS Functions</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="container">
+      <h1>CSS3 + JavaScript: Transitions, Animations, and Function Logic</h1>
+
+      <section id="part1">
+        <h2>Part 1: CSS3 Transitions & Keyframe Animations</h2>
+        <p>Hover the button to see a transition. The box below runs a keyframe animation.</p>
+
+        <button class="btn" type="button">Hover Me (transition)</button>
+
+        <div class="stage">
+          <div id="animatedBox" class="box" aria-label="Animated box"></div>
+        </div>
+      </section>
+
+      <section id="part2">
+        <h2>Part 2: JavaScript Functions — Scope, Parameters & Return Values</h2>
+        <p>We compute animation duration from parameters and update the UI.</p>
+        <div class="controls">
+          <label for="speed">Speed Multiplier:</label>
+          <input id="speed" type="number" min="0.25" step="0.25" value="1">
+          <button id="applySpeed" type="button">Apply Duration</button>
+          <span id="computedDuration" class="badge" aria-live="polite"></span>
+        </div>
+      </section>
+
+      <section id="part3">
+        <h2>Part 3: Combine CSS Animations with JavaScript</h2>
+        <div class="grid">
+          <div class="card" id="card">
+            <div class="card-inner">
+              <div class="card-face card-front">Front</div>
+              <div class="card-face card-back">Back</div>
+            </div>
+          </div>
+          <div class="actions">
+            <button id="flipCardBtn" type="button">Flip Card</button>
+            <button id="pulseBoxBtn" type="button">Pulse Box</button>
+            <button id="toggleLoaderBtn" type="button">Start Loader</button>
+          </div>
+        </div>
+
+        <div id="loader" class="loader" aria-hidden="true" aria-label="Loading indicator"></div>
+
+        <p class="note">JS adds/removes classes to trigger animations. Open the console to see scope and counters.</p>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
